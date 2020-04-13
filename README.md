@@ -1,3 +1,6 @@
-# React Repo
+# Frontend Repo
 
-Repo for react tutorial/projects
+Repo for front end tutorial/projects
+* React
+* Vue
+* Svelte
