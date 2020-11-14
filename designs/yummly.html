@@ -1,0 +1,222 @@
+<!-- Mock layout for https://www.yummly.com/recipe/Mulled-Red-Wine-9122171 -->
+<!DOCTYPE html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+</head>
+
+<style>
+  body {
+    margin: 0;
+  }
+
+  .app {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+    'header'
+    'main'
+    'footer';
+  }
+
+  .header {
+    grid-area: header;
+    padding: 10px;
+  }
+
+  .header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .header-nav-left {
+    display: flex;
+    justify-content: center;;
+  }
+
+  .menu-icon-bar {
+    width: 20px;
+    height: 2px;
+    background-color: #bababa;
+    border-radius: 2px;
+    margin: 4px 0;
+  }
+
+  .menu-icon {
+    width: 20px;
+    height: 20px;
+    padding-right: 10px;
+  }
+
+  .main {
+    grid-area: main;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .recipe-icon {
+    width: 94vw;
+    height: 94vh;
+    max-width: 320px;
+    max-height: 320px;
+    border-radius: 10px;
+  }
+
+  .main-header-title {
+    font-family: europa-boldregular, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.333333333333333;
+    color: #232323;
+  }
+
+  .main-header-author {
+    color: #4a4a4a;
+    font-size: 12px;
+    line-height: 1;
+    font-family: europa-boldregular, sans-serif;
+  }
+
+  .main-header-instructions {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  .box-header {
+    color: #4a4a4a;
+    font-size: 40px;
+  }
+
+  .border-left {
+    border-left: 1px solid #bababa;
+  }
+
+  footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+  }
+
+  .footer-directions {
+    background: rgb(58, 150, 145);
+    color: white;
+    box-shadow: 0 4px 7px rgba(0,0,0,0.18);
+    border-radius: 30px;
+    padding: 10px 15px;
+  }
+</style>
+
+<html>
+<body>
+  <div class="app">
+    <header class="header">
+      <nav class="header-nav">
+        <section class="header-nav-left">
+          <section class="menu-icon">
+            <div class="menu-icon-bar"></div>
+            <div class="menu-icon-bar"></div>
+            <div class="menu-icon-bar"></div>
+          </section>
+          <section class="menu-logo">
+            <img src="https://x.yummlystatic.com/web/yummly.svg" alt="Yummly">
+          </section>
+        </section>
+        <div class="header-nav-right">
+          <svg class="menu-icon" height="512pt" viewBox="0 -31 512.00026 512" width="512pt" xmlns="http://www.w3.org/2000/svg"><path d="m164.960938 300.003906h.023437c.019531 0 .039063-.003906.058594-.003906h271.957031c6.695312 0 12.582031-4.441406 14.421875-10.878906l60-210c1.292969-4.527344.386719-9.394532-2.445313-13.152344-2.835937-3.757812-7.269531-5.96875-11.976562-5.96875h-366.632812l-10.722657-48.253906c-1.527343-6.863282-7.613281-11.746094-14.644531-11.746094h-90c-8.285156 0-15 6.714844-15 15s6.714844 15 15 15h77.96875c1.898438 8.550781 51.3125 230.917969 54.15625 243.710938-15.941406 6.929687-27.125 22.824218-27.125 41.289062 0 24.8125 20.1875 45 45 45h272c8.285156 0 15-6.714844 15-15s-6.714844-15-15-15h-272c-8.269531 0-15-6.730469-15-15 0-8.257812 6.707031-14.976562 14.960938-14.996094zm312.152343-210.003906-51.429687 180h-248.652344l-40-180zm0 0"/><path d="m150 405c0 24.8125 20.1875 45 45 45s45-20.1875 45-45-20.1875-45-45-45-45 20.1875-45 45zm45-15c8.269531 0 15 6.730469 15 15s-6.730469 15-15 15-15-6.730469-15-15 6.730469-15 15-15zm0 0"/><path d="m362 405c0 24.8125 20.1875 45 45 45s45-20.1875 45-45-20.1875-45-45-45-45 20.1875-45 45zm45-15c8.269531 0 15 6.730469 15 15s-6.730469 15-15 15-15-6.730469-15-15 6.730469-15 15-15zm0 0"/></svg>
+          <svg class="menu-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+          <g>
+            <g>
+              <path d="M317,0C209.477,0,122,87.477,122,195c0,42.96,13.975,82.712,37.603,114.971L0,469.573L42.426,512l159.603-159.603
+                C234.288,376.025,274.04,390,317,390c107.523,0,195-87.477,195-195S424.523,0,317,0z M317,360c-90.981,0-165-74.019-165-165
+                S226.019,30,317,30s165,74.019,165,165S407.981,360,317,360z"/>
+            </g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          </svg>
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+      <div>
+        <img class="recipe-icon" alt="Mulled Red Wine" src="https://lh3.googleusercontent.com/DTL3-M2T47ud3YgFrnnbe9r3k0kk6zdoDDVZkmVOmUQ8eMnhxqfoCdekQkUFRjmgbP7DZv07cW0sDTTWV2TX=s640-c-rj-v1-e365" width="640" height="640" /> 
+        <div class="main-header">
+          <h1 class="main-header-title">
+            Mulled Red Wine
+          </h1>
+          <div class="main-header-author">
+            ANOTHER TEA SPOON
+          </div>
+          <div class="main-header-instructions">
+            <div class="box">
+              <div class="box-header">
+                9
+              </div>
+              <div class="box-sub-header">
+                Ingredients
+              </div>
+            </div>
+            <div class="box border-left">
+              <div class="box-header">
+                10
+              </div>
+              <div class="box-sub-header">
+                Minutes
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-directions">
+        Read Directions
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
