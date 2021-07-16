@@ -1,0 +1,29 @@
+{
+  "name": "learning-graphql",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev:server": "nodemon server/server.js",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "add": "^2.0.6",
+    "apollo-server-express": "^2.15.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "graphql": "^15.2.0",
+    "graphql-depth-limit": "^1.1.0",
+    "graphql-playground-middleware-express": "^1.7.18",
+    "graphql-validation-complexity": "^0.3.0",
+    "mongodb": "^3.5.9",
+    "node-fetch": "^2.6.1",
+    "nodemon": "^2.0.4",
+    "yarn": "^1.22.4"
+  },
+  "devDependencies": {
+    "eslint": "^7.3.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "prettier": "^2.0.5"
+  }
+}
